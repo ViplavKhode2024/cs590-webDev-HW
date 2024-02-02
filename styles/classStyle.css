@@ -1,0 +1,232 @@
+.introHead {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.introSection {
+    padding: 6em 0;
+}
+
+.cityGradient {
+    color: #CE0F69;
+    background: -webkit-linear-gradient(left, #CE0F69, #452E91);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.introRow {
+    width: 100%;
+    display: inline-flex;
+    padding: 0 65px;
+}
+
+.introCol1 {
+    flex: 38%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 17px;
+    line-height: 24px;
+    color: #666;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 0;
+}
+
+.introCol2 {
+    flex: 62%;
+    height: auto;
+    padding: 50px 100px;
+}
+
+.introVideo {
+    width: 100%;
+    height: auto;
+}
+
+.footerDiv {
+    flex: 30%;
+}
+
+.contactForm button {
+    background-color: #e88a00;
+    border: none;
+    color: white;
+    letter-spacing: 3px;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contactForm {
+    text-align: left;
+}
+
+.contactForm input {
+    border-radius: 10%;
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.search {
+    margin-left: auto;
+    margin-right: 3em;
+}
+
+.search input {
+    border: none;
+    background-color: whitesmoke;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.search button {
+    background-color: #e88a00;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    letter-spacing: 3px;
+    padding: 12px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.banner {
+    background-image: url("../assets/banner/banner2.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 40em;   
+}
+
+.bannerSpan{
+    flex: 50%; 
+    margin-left: 3em; 
+    font-size: 50px; 
+    font-weight: 700; 
+    color: whitesmoke;
+}
+
+.banner2 {
+    background-image: url("../assets/banner/banner3.avif");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 30em;   
+}
+
+/* Changed */
+.aboutHead{
+    margin: 0 120px;
+    padding-top: 20px;
+    text-decoration: underline;
+    text-decoration-color: black;
+    
+}
+
+.ttdButton{
+    padding: 5px 20px;
+    border: solid 3px white; 
+    background-color: transparent; 
+    color: white; 
+    font-size: 15px; 
+    letter-spacing: 3px; 
+    word-spacing: 6px;
+    cursor: pointer;
+
+
+    position: relative;
+    animation: mymove 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes mymove {
+    from {font-size: 0px;}  
+    to {font-size: 30px;}
+  }
+
+
+
+.aboutImg{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+ 
+/* changed */
+.readMore{
+    background-color: #e88a00;
+    border: none;
+    color: white;
+    letter-spacing: 3px;
+    font-size: small;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: fit-content;
+    cursor: pointer;
+}
+
+#searchBtn{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+/* changed */
+
+#aboutImg{
+    padding: 20px;
+}
+
+#aboutImg:hover {
+    animation: shakeImage 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shakeImage {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+   /* background-color: #2196F3; */
+    padding: 30px;
+    
+    align-items: center;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 70px;
+    font-size: 30px;
+  }

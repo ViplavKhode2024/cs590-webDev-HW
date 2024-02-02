@@ -9,6 +9,7 @@
     <title>Visit Fort Wayne</title>
     <link rel="icon" href="./assets/logo/fwLogo.png">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/classStyle.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         
         <nav> <!-- Nav Tag -->
             <ul> <!-- List Tag -->
-                <li><a href="https://www.visitfortwayne.com/meetings/">MEETINGS</a></li>
+                <li><a href="https://www.visitfortwayne.com/meetings/"> MEETINGS</a></li>
                 <li><a href="https://www.visitfortwayne.com/things-to-do/">THINGS TO DO</a></li>
                 <li><a href="https://www.visitfortwayne.com/events/">EVENTS</a></li>
                 <li><a href="https://www.visitfortwayne.com/food-drink/">FOOD & DRINK</a></li>
@@ -30,14 +31,14 @@
         <form class="search"> <!-- Form Tag -->
             <input type="text" placeholder="Enter Keywords">
                 <button type="button">
-                    <span style="font-family: 'Courier New', Courier, monospace;">Search</span>
+                    <span id="searchBtn">Search</span>
                 </button>
         </form>
     </header>
 
     <section class="banner"> <!-- Section Tag with a background image-->
         
-        <span style="flex: 50%; margin-left: 3em; font-size: 3em; font-weight: 700; color: whitesmoke;">
+        <span class="bannerSpan">
             Adventures with a <br> beautiful perspective <br>
             
             <a href="https://www.visitfortwayne.com/things-to-do/" style="cursor:auto;">
@@ -79,17 +80,16 @@
             </div>
         </div>
     </section>
-
-
+    
     <footer> <!-- Footer Tag -->
         <div class="footerDiv">
-            <h3 style="font-family: inherit; font-weight: 100; font-size: 1.5em; margin: 0 0 10px 0;">Address</h3>
+            <h3>Address</h3>
             <p>927 South Harrison Street<br>Fort Wayne, Indiana 46802</p>
             <p>Phone: (260) 424-3700</p>
         </div>
 
         <div class="footerDiv">
-            <h3 style="font-family: inherit; font-weight: 100; font-size: 1.5em; margin: 0 0 10px 0;">Visitors Center Hours</h3>
+            <h3>Visitors Center Hours</h3>
             
             <p>Mon: 9:30am-5pm</p>
             <p>Tue-Fri: 8am-5pm</p>

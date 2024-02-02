@@ -23,7 +23,7 @@ header {
 }
 
 main{
-    margin-bottom: 2em;
+    margin-bottom: 2px;
 }
 
 ul {
@@ -85,6 +85,14 @@ footer {
     color: white;
 }
 
+footer h3{
+    font-family: inherit; 
+    font-weight: 100;
+    font-size: 1.5em; 
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
 textarea {
     padding: 12px 20px;
     box-sizing: border-box;
@@ -100,165 +108,3 @@ table, th, td {
     table-layout: fixed;
     padding: 20px 70px;
   }
-
-.introHead {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    text-align: center;
-}
-
-.introSection {
-    padding: 6em 0;
-}
-
-.cityGradient {
-    color: #CE0F69;
-    background: -webkit-linear-gradient(left, #CE0F69, #452E91);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.introRow {
-    width: 100%;
-    display: inline-flex;
-    padding: 0 65px;
-}
-
-.introCol1 {
-    flex: 38%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 17px;
-    line-height: 24px;
-    color: #666;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    font-weight: 0;
-}
-
-.introCol2 {
-    flex: 62%;
-    height: auto;
-    padding: 50px 100px;
-}
-
-.introVideo {
-    width: 100%;
-    height: auto;
-}
-
-.footerDiv {
-    flex: 30%;
-}
-
-.contactForm button {
-    background-color: #e88a00;
-    border: none;
-    color: white;
-    letter-spacing: 3px;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 100%;
-}
-
-.contactForm {
-    text-align: left;
-}
-
-.contactForm input {
-    border-radius: 10%;
-    background-color: whitesmoke;
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 4px;
-    letter-spacing: 2px;
-    word-spacing: 3px;
-}
-
-.search {
-    margin-left: auto;
-    margin-right: 3em;
-}
-
-.search input {
-    border: none;
-    background-color: whitesmoke;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 4px;
-    letter-spacing: 2px;
-    word-spacing: 3px;
-}
-
-.search button {
-    background-color: #e88a00;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    letter-spacing: 3px;
-    padding: 12px 20px;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.banner {
-    background-image: url("../assets/banner/banner2.png");
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    height: 40em;   
-}
-
-.banner2 {
-    background-image: url("../assets/banner/banner3.avif");
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    height: 30em;   
-}
-
-.aboutHead{
-    margin: 0 120px;
-    padding: 0 30px;
-    padding-top: 20px;
-    text-decoration: underline;
-    text-decoration-color: black;
-    
-}
-
-.ttdButton{
-    padding: 10px 5em;
-    border: solid 3px white; 
-    background-color: transparent; 
-    color: white; 
-    font-size: 0.3em; 
-    letter-spacing: 3px; 
-    word-spacing: 6px;
-    cursor: pointer;
-}
-
-.aboutImg{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.readMore{
-    background-color: #e88a00;
-    border: none;
-    color: white;
-    letter-spacing: 3px;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: fit-content;
-    cursor: pointer;
-}

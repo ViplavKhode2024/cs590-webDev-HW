@@ -1,0 +1,178 @@
+$purple: #CE0F69;
+$grey: #666;
+$mustad: #e88a00;
+$dark-blue: #452E91;
+$white: #ffffff;
+$black: #000000;
+$white-smoke: f5f5f5;
+
+$fullValue: 100%;
+$emptyValue: 0;
+$pixel-sizes: ("basic":1px, "small": 15px, "normal": 25px, "large": 100px);
+
+
+.introHead {
+    position: relative;
+    min-height: map-get($pixel-sizes, "basic");
+    padding-right: map-get($pixel-sizes, "small");;
+    padding-left: map-get($pixel-sizes, "small");;
+    text-align: center;
+}
+
+.introSection {
+    padding: 6em $emptyValue;
+}
+
+.cityGradient {
+    color: $purple;
+    background: -webkit-linear-gradient(left, $purple, $dark-blue);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.introRow {
+    width: $fullValue;
+    display: inline-flex;
+    padding: $emptyValue 65px;
+}
+
+.introCol1 {
+    flex: 38%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: map-get($pixel-sizes, "small")+2;
+    line-height: map-get($pixel-sizes, "normal")-1;
+    color: $grey;
+    letter-spacing: map-get($pixel-sizes, "basic");
+    word-spacing: map-get($pixel-sizes, "small")*2;
+    font-weight: $emptyValue;
+}
+
+.introCol2 {
+    flex: 62%;
+    height: auto;
+    padding: map-get($pixel-sizes, "normal")*2 map-get($pixel-sizes, "large");
+}
+
+.introVideo {
+    width: $fullValue;
+    height: auto;
+}
+
+.footerDiv {
+    flex: 30%;
+}
+
+.button-base{
+    background-color: $mustad;
+    border: none;
+    color: $white;
+    letter-spacing: map-get($pixel-sizes, "small")/5;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contactForm {
+    
+    text-align: left;
+    
+    input {
+        border-radius: 10%;
+        background-color: $white-smoke;
+        width: $fullValue;
+        padding: map-get($pixel-sizes, "small")-3 map-get($pixel-sizes, "large")/5;
+        margin: map-get($pixel-sizes, "small")/3 + 3 $emptyValue;
+        box-sizing: border-box;
+        border-radius: map-get($pixel-sizes, "small");
+        letter-spacing: map-get($pixel-sizes, "basic")*2;
+        word-spacing: map-get($pixel-sizes, "small")/5;
+    }
+    
+    button {
+       @extend .button-base;
+        padding: map-get($pixel-sizes, "small")+1  map-get($pixel-sizes, "small")*2+2;
+        margin: map-get($pixel-sizes, "large")/25 map-get($pixel-sizes, "large")/50;
+        width: $fullValue;
+    }
+}
+
+
+.search {
+    
+    margin-left: auto;
+    margin-right: 3em;
+    
+    input {
+        border: none;
+        background-color: $white-smoke;
+        padding: 12px 20px;
+        margin: 8px $emptyValue;
+        box-sizing: border-box;
+        border-radius: 4px;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+    }
+    
+    button {
+        @extend .button-base;
+        padding: 12px 20px;
+        border-radius: 4px;
+    }
+}
+
+.banner-base{
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.banner {
+    @extend .banner-base;
+    background-image: url("../assets/banner/banner2.png");
+    height: 40em;   
+}
+
+.banner2 {
+    @extend .banner-base;
+    background-image: url("../assets/banner/banner3.avif");
+    height: 30em;   
+}
+
+.aboutHead{
+    margin: $emptyValue 120px;
+    padding: $emptyValue 30px;
+    padding-top: 20px;
+    text-decoration: underline;
+    text-decoration-color: $black;
+    
+}
+
+.ttdButton{
+    padding: 10px 5em;
+    border: solid 3px $white; 
+    background-color: transparent; 
+    color: $white; 
+    font-size: 0.3em; 
+    letter-spacing: 3px; 
+    word-spacing: 6px;
+    cursor: pointer;
+}
+
+.aboutImg{
+    display: block;
+    width: $fullValue;
+    height: $fullValue;
+}
+
+.readMore{
+    background-color: $mustad;
+    border: none;
+    color: $white;
+    letter-spacing: 3px;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: fit-content;
+    cursor: pointer;
+}
