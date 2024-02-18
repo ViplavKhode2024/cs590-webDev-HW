@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="module">
+        class PlanetInfoFetcher {
+            constructor(apiKey) {
+                this.url = 'https://planets-info-by-newbapi.p.rapidapi.com/api/v1/planets/';
+                this.options = {
+                    method: 'GET',
+                    headers: {
+                        'X-RapidAPI-Key': apiKey,
+                        'X-RapidAPI-Host': 'planets-info-by-newbapi.p.rapidapi.com'
+                    }
+                };
+                this.savedData = null;
+            }
+
+            async fetchPlanetInfo(){
+                try {
+                    const response = await fetch(this.url, this.options);
+                    this.savedData = await response.json();
+                    console.log(this.savedData);
+                } catch (error) {
+                    console.log("An error occurred");
+                    console.error(error);
+                }
+            }
+
+            searchItem(item){
+                if(!this.savedData){
+                    console.log("Data not loaded yet.");
+                    return false;
+                }
+
+                return this.savedData.some(dataItem => dataItem.name === item);
+            }
+        }
+
+        const apiKey = '9a4ea4b6c1mshfc28f500f24ac02p18df05jsn5ed74c20e81a';
+        const planetInfoFetcher = new PlanetInfoFetcher(apiKey);
+
+        planetInfoFetcher.fetchPlanetInfo();
+
+        setTimeout(() => {
+            const result = planetInfoFetcher.searchItem("Venus");
+            console.log(`Item found: ${result}`);
+        }, 2000);
+    </script>
+</body>
+
+</html>

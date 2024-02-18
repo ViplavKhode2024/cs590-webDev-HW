@@ -10,6 +10,9 @@
     <link rel="icon" href="./assets/logo/fwLogo.png">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/classStyle.css">
+
+    <script src="./js/script.js"></script>
+
 </head>
 
 <body>
@@ -91,21 +94,32 @@
         <div class="footerDiv">
             <h3>Visitors Center Hours</h3>
             
-            <p>Mon: 9:30am-5pm</p>
-            <p>Tue-Fri: 8am-5pm</p>
+            <p>Mon: 9:30 am-5 pm</p>
+            <p>Tue-Fri: 8 am-5 pm</p>
         </div>
 
         <div class="footerDiv contactForm">
             <h3 style="font-family: inherit; font-weight: 100; font-size: 1.5em; margin: 0 0 10px 0; text-align: center;">Newsletter</h3>
-            <form> <!-- Form Tag -->
+            
+            <!-- Form Tag -->
+            <form name="footerForm" onSubmit="validateForm()" method="post"> 
                 
-                <label for="email">Email</label> <!-- Label for form input -->
-                <input type="text" id="email" name="name" placeholder="Enter Your Email" required>
+                <label for="email">Email</label> 
                 
-                <label for="name">Name</label> <!-- Label for form input -->
-                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                <!-- Label for form input -->
+                <input type="text" id="email" name="email" placeholder="Enter Your Email">
                 
-                <button>Subscribe</button>
+                <label for="name">Name</label> 
+                
+                <!-- Label for form input -->
+                <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                
+                <div style="display: flex; align-items: center;">
+                    <input type="checkbox" id="checkbox" onChange="toggleButton()" style="width: 10%;">
+                    <span style="font-size: 11px;"> By Clicking This You Accept The Terms and Conditions </span>
+                </div>
+                
+                <button id="myButton" style="background-color: #ccc;" disabled> Subscribe </button>
             </form>
         </div>
     </footer>
