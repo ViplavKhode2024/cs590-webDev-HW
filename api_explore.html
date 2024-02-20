@@ -95,8 +95,12 @@
             let result = this.fetchedData.some(dataItem => dataItem.name.toLowerCase().includes(item.toLowerCase()));
             if(result)
                 confirm(`True. Your Planet named as "${item}" is a part of Solar System. You will find it below`);
-            else
-                confirm("False. This Planet is out of our Solar System");
+            else{
+                if(item == "Pranjali")
+                    confirm("This is not a planet, This is a Star ❤️");
+                else
+                    confirm("False. This Planet is out of our Solar System");
+            }
 
             return result;
         }
