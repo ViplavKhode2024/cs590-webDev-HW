@@ -32,7 +32,9 @@
         </nav>
 
         <form class="search"> <!-- Form Tag -->
-            <input type="text" placeholder="Enter Keywords">
+
+            <!-- (EVENTS) While typing in this input field, the button changes text -->
+            <input type="text" oninput="whileSearching()" placeholder="Enter Keywords" id="searchInp">
                 <button type="button">
                     <span id="searchBtn">Search</span>
                 </button>
@@ -44,11 +46,11 @@
         <span class="bannerSpan">
             Adventures with a <br> beautiful perspective <br>
             
-            <a href="https://www.visitfortwayne.com/things-to-do/" style="cursor:auto;">
-                <button onclick="window.location.href = 'https://www.visitfortwayne.com/things-to-do/';" class="ttdButton">
-                    Things To Do
-                </button>
-            </a>
+            <!-- (EVENTS) onClick event to redirect the user to a link -->
+            <button onclick="window.location.href = 'https://www.visitfortwayne.com/things-to-do/';" class="ttdButton">
+                Things To Do
+            </button>
+            
         </span>
 
     </section>
@@ -102,6 +104,7 @@
             <h3 style="font-family: inherit; font-weight: 100; font-size: 1.5em; margin: 0 0 10px 0; text-align: center;">Newsletter</h3>
             
             <!-- Form Tag -->
+            <!-- (EVENTS) On Submitting this form, it goes for Validation and Processing -->
             <form name="footerForm" onSubmit="validateForm()" method="post"> 
                 
                 <label for="email">Email</label> 

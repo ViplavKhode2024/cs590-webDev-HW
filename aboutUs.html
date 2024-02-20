@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/classStyle.css">
     <link rel="stylesheet" href="./styles/style.css">
 
+    <script src="./js/script.js"></script>
 </head>
 <body>
     <header> <!-- Header Tag -->
@@ -28,9 +29,11 @@
         </nav>
 
         <form class="search"> <!-- Form Tag -->
-            <input type="text" placeholder="Enter Keywords">
+
+            <!-- (EVENTS) While typing in this input field, the button changes text -->
+            <input type="text" oninput="whileSearching()" placeholder="Enter Keywords" id="searchInp">
                 <button type="button">
-                    <span >Search</span>
+                    <span id="searchBtn">Search</span>
                 </button>
         </form>
     </header>
@@ -94,16 +97,27 @@
         </div>
 
         <div class="footerDiv contactForm">
-            <h3>Newsletter</h3>
-            <form> <!-- Form Tag -->
+            <h3 style="font-family: inherit; font-weight: 100; font-size: 1.5em; margin: 0 0 10px 0; text-align: center;">Newsletter</h3>
+            
+            <!-- Form Tag -->
+            <form name="footerForm" onSubmit="validateForm()" method="post"> 
                 
-                <label for="email">Email</label> <!-- Label for form input -->
-                <input type="text" id="email" name="name" placeholder="Enter Your Email" required>
+                <label for="email">Email</label> 
                 
-                <label for="name">Name</label> <!-- Label for form input -->
-                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                <!-- Label for form input -->
+                <input type="text" id="email" name="email" placeholder="Enter Your Email">
                 
-                <button>Subscribe</button>
+                <label for="name">Name</label> 
+                
+                <!-- Label for form input -->
+                <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                
+                <div style="display: flex; align-items: center;">
+                    <input type="checkbox" id="checkbox" onChange="toggleButton()" style="width: 10%;">
+                    <span style="font-size: 11px;"> By Clicking This You Accept The Terms and Conditions </span>
+                </div>
+                
+                <button id="myButton" style="background-color: #ccc; cursor: not-allowed;" disabled> Subscribe </button>
             </form>
         </div>
     </footer>
